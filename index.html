@@ -50,12 +50,17 @@
 
       <div class="btn-group">
         <a href="important_Files/replace_me_for_resume.txt" download class="btn">Download CV</a>
-        <div class="btn">Contact</div>
+        <a href="#contact" class="btn">Contact</a>
       </div>
-
+      
+      <!-- these are social media links edit them as you need -->
       <div class="socials">
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://github.com/" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </div>
       </div>
 
@@ -142,27 +147,32 @@
   </section>
   
  <!-- This is the contact section -->
+  <!-- If you want to have it send emails to your email you must set it up through https://web3forms.com/ -->
   <section class="contact" id="contact">
     <div class="input-box">
 
       <h2 class="section-title">Contact Me</h2>
       
-      <div class="input">
-        <input type="text" placeholder="Your Name">
-        <i class="fa-solid fa-user"></i>
-      </div>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        
+        <div class="input">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <i class="fa-solid fa-user"></i>
+        </div>
 
-      <div class="input">
-        <input type="text" placeholder="example@email.com">
-        <i class="fa-solid fa-envelope"></i>
-      </div>
+        <div class="input">
+          <input type="email" name="email" placeholder="example@email.com" required>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
 
-      <div class="input">
-        <input type="text" placeholder="Reason for Contact">
-        <i class="fa-solid fa-pen-to-square"></i>
-      </div>
+        <div class="input">
+          <input name="message" placeholder="Reason for Contact" required></input>
+          <i class="fa-solid fa-pen-to-square"></i>
+        </div>
 
-      <div class="btn">Submit</div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
     </div>
   </section>
   <footer>
