@@ -1,3 +1,4 @@
+/* ==================== GLOBAL STYLES ==================== */
 *{
   margin : 0;
   padding : 0;
@@ -6,8 +7,9 @@
   text-decoration : none;
   scroll-behavior : smooth;
   list-style : none;
-
 }
+
+/* ==================== HEADER & NAVIGATION ==================== */
 header{
   position: fixed;
   top: 1rem;
@@ -53,7 +55,6 @@ li a::before{
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
   background: linear-gradient(to right, rgb(0,157,255),rgb(255,0,255));  
-
 }
 li a:hover::before{
   width: 100%;
@@ -79,18 +80,20 @@ li a:hover::before{
   display: none;
 }
 
+/* ==================== SECTION LAYOUT ==================== */
 section{
   min-height: 100vh;
   padding: 8rem 12%;
   width: 100%;
   position: relative;
 }
+
+/* ==================== ABOUT SECTION ==================== */
 .about{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .about .about-container{
   display: flex;
   align-items: center;
@@ -124,6 +127,8 @@ section{
   color: transparent;
   font-size: 2rem;
 }
+
+/* ==================== BUTTONS & SOCIAL LINKS ==================== */
 .btn-group{
   display: flex;
   gap: 1rem;
@@ -140,7 +145,6 @@ section{
 .btn:hover{
   background-color: black;
   color: white;
-
 }
 .socials{
   display: flex;
@@ -155,7 +159,7 @@ section{
   transform: scale(1.1);
 }
 
-
+/* ==================== SECTION TITLE ==================== */
 .section-title{
   text-align:center;
   font-size: 4rem;
@@ -163,6 +167,7 @@ section{
   margin-bottom: 3rem;
 }
 
+/* ==================== EXPERIENCE SECTION ==================== */
 .experience-info{
   display: flex;
   align-items: center;
@@ -172,7 +177,9 @@ section{
 .experience img{
   width: 24vw;
   border-radius: 3rem;;
-} 
+}
+
+/* ==================== GRID & CARDS ==================== */
 .grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -205,6 +212,8 @@ section{
   background-clip: text;
   color: transparent;
 }
+
+/* ==================== SCROLLBAR ==================== */
 ::-webkit-scrollbar{
   width: 20px;
 }
@@ -215,6 +224,7 @@ section{
   background: linear-gradient(to bottom, rgb(0,157,255), rgb(255,0,255));
 }
 
+/* ==================== PROJECTS SECTION ==================== */
 .project-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
@@ -256,6 +266,7 @@ section{
   font-weight: 500;
 }
 
+/* ==================== CONTACT SECTION ==================== */
 .input-box{
   display: flex;
   flex-direction: column;
@@ -264,10 +275,8 @@ section{
   text-align: center;
   gap: 2rem;
   margin-top: 5rem;
-
 }
 .input-box input{
-
   border-radius: 3rem;
   border: 2px solid black;
   padding: 2rem 8rem;
@@ -277,16 +286,17 @@ section{
   font-size: 3rem;
 }
 .input{
-    position: relative;
+  position: relative;
 }
 .input i{
- position: absolute;
- font-size: 4rem;
+  position: absolute;
+  font-size: 4rem;
   top: 50%;
   left: 10px;
   transform: translate(50%, -50%);
 }
 
+/* ==================== FOOTER ==================== */
 footer{
   bottom: 0;
   left: 0;
@@ -312,6 +322,7 @@ footer ul li a{
   margin-top: 2rem;
 }
 
+/* ==================== RESPONSIVE - TABLETS (1280px) ==================== */
 @media (max-width: 1280px){
   header{
     padding: 1rem 2rem;
@@ -334,10 +345,12 @@ footer ul li a{
     font-size: 2.5rem;
   }
 }
+
+/* ==================== RESPONSIVE - TABLETS (768px) ==================== */
 @media (max-width: 768px){
   header{
     gap: 1rem;
-    pading: 1rem 1 rem;
+    padding: 1rem 1 rem;
   }
   header .logo{
     font-size: 1rem;
@@ -365,8 +378,10 @@ footer ul li a{
     width: 70vw;
   }
 }
+
+/* ==================== RESPONSIVE - MOBILE (600px) ==================== */
 @media (max-width: 600px){
-  header # menu-icon{
+  header #menu-icon{
     display: block;
   }
   .nav-links{
@@ -387,7 +402,6 @@ footer ul li a{
     margin-top: 1.5 rem;
     padding: 1rem;
   }
-
   .nav-links.active{
     display: block;
   }
@@ -395,11 +409,9 @@ footer ul li a{
     padding: 1rem 5rem;
     gap: 8rem;
   }
-
   header .logo{
     font-size: 1.5rem;
   }
-
   .about-container img{
     width: 80vw;
   }
