@@ -281,12 +281,14 @@ section{
   border: 2px solid black;
   padding: 2rem 8rem;
   font-size: 3rem;
+
 }
 .input-box input::placeholder{
   font-size: 3rem;
 }
 .input{
   position: relative;
+  margin: 20px;
 }
 .input i{
   position: absolute;
